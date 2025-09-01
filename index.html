@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Insignia 2025</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+<!-- Particle Background -->
+<canvas id="particle-canvas"></canvas>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader">INSIGNIA 2025</div>
+  </div>
+
+  <!-- Navbar -->
+   <!-- Responsive Navbar -->
+  <header class="bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.png" alt="Insignia Logo" height="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+   <li class="nav-item"><a class="nav-link" href="investor.html">Investors</a></li>
+   <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+    <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Top Banner -->
+  <div class="hover-banner top-banner text-center">
+    <div class="scrolling-text">
+      ACPCE | ACPCE Innovation Cell | IIC | Insignia 2025 &nbsp;&nbsp; | &nbsp;&nbsp;
+      SPONSORS: TechCorp, InnovateX, CodeBase, DevTools, StartupHub &nbsp;&nbsp; | &nbsp;&nbsp;
+      INVESTORS: VentureCapital, AngelFund
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+<section id="home" class="container py-4 text-center">
+  <div class="row home-flex justify-content-center align-items-center">
+    <!-- Left -->
+    <div class="col-md-6 hero-left text-center text-md-start">
+      <h1 class="hero-title">INSIGNIA 2025</h1>
+      <div class="info-links d-flex justify-content-center justify-content-md-start gap-3 flex-wrap my-3">
+        <span><strong>WHAT?</strong></span>
+        <span><strong>WHY?</strong></span>
+        <span><strong>WHEN?</strong></span>
+      </div>
+
+      <!-- Event Info -->
+      <div class="event-info mt-4">
+        <p><i class="bi bi-calendar-event"></i> Sep 24 – 25, 2025 &nbsp; <i class="bi bi-clock"></i> 10:00 AM</p>
+        <p><i class="bi bi-geo-alt"></i> Navi Mumbai, Maharashtra - India</p>
+        <a href="register.html" class="btn btn-primary mb-3">REGISTER NOW</a>
+
+        <!-- Countdown -->
+        <div id="countdown" class="mt-3 d-flex gap-2 justify-content-center justify-content-md-start"></div>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="col-md-6 hero-right text-center mt-4 mt-md-0">
+      <img src="assets/banner.png" alt="Event Banner" class="banner img-fluid" />
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== ABOUT INSIGNIA SECTION ========== -->
+<section class="about-section">
+  <div class="about-content">
+    <h2>INSIGNIA – Startup & Innovation Summit 2025</h2>
+    <p><strong>Dates:</strong> 24th & 25th September 2025</p>
+    <p><strong>Venue:</strong> A. C. Patil College of Engineering, Plot No. 17, Sector-4, Kharghar, Navi Mumbai – 410210</p>
+
+    <h3><strong>Event Overview</strong></h3>
+    <p>
+      INSIGNIA 2025 is a two-day national-level Startup & Innovation Summit organized by the
+      Institute Innovation Cell (IIC) of A. C. Patil College of Engineering, Navi Mumbai. This event
+      acts as a launchpad for students, aspiring entrepreneurs, innovators, and early-stage startups
+      to showcase creativity, gain mentorship, and connect directly with investors, mentors,
+      industry leaders, and government representatives.
+    </p>
+    <p>
+      Over two days, participants will engage in keynote speeches, startup pitching rounds, investor networking,
+      workshops, product demos, and panel discussions – aiming to bridge the gap between innovation and execution.
+    </p>
+
+    <h3><strong>Key Objectives of INSIGNIA 2025</strong></h3>
+    <ul>
+      <li>Foster an entrepreneurial mindset among students and youth.</li>
+      <li>Provide mentorship and exposure to early-stage startups.</li>
+      <li>Bridge the gap between student innovation and execution.</li>
+      <li>Enable networking opportunities with investors, incubators, and experts.</li>
+      <li>Promote regional innovation & product-based entrepreneurship.</li>
+      <li>Support sustainable, impactful, and scalable solutions.</li>
+    </ul>
+
+    <h3><strong>Who Can Participate?</strong></h3>
+    <ul>
+      <li>Engineering and management students</li>
+      <li>Early-stage and pre-seed startups</li>
+      <li>Startup mentors & incubation centres</li>
+      <li>Angel investors, VCs, and government bodies</li>
+      <li>Startup India & Atal Innovation Mission participants</li>
+    </ul>
+
+    <h3><strong>Event Highlights</strong></h3>
+    <ul>
+      <li>Keynote speeches by startup mentors & industry experts</li>
+      <li>Startup expo and product demonstrations</li>
+      <li>Four-stage pitch competition</li>
+      <li>Panel discussions on funding & scaling</li>
+      <li>Workshops on ideation, MVP design & GTM execution</li>
+      <li>Networking with investors, govt representatives & leaders</li>
+      <li>Recognition & awards for top teams and startups</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Tracks Section -->
+ <li></li>
+ <li></li>
+<section id="tracks" class="container-fluid py-5 text-center bg-white">
+  <h2 class="mb-4"> Domains of Interest</h2>
+
+  <div class="d-flex justify-content-center">
+    <div class="d-flex flex-row flex-nowrap justify-content-center" style="gap: 20px; max-width: 95%;">
+
+      <!-- Card Example -->
+      <div class="card shadow rounded-3 p-3 d-flex flex-column align-items-center text-center"
+        style="min-width: 220px; background:#2563EB; color:white; height: 100%;">
+        <img src="assets/download.jfif" alt="Robotics and Automation"
+          class="img-fluid mb-3 rounded shadow" style="max-width:70px; height:auto;" />
+        <strong class="mb-2">Robotics & Automation</strong>
+        <hr class="domain-divider bg-light w-50" />
+        <p class="description mt-2">Innovative machines enhancing efficiency in industries and daily life.</p>
+      </div>
+
+      <!-- Agri Tech -->
+      <div class="card shadow rounded-3 p-3 d-flex flex-column align-items-center text-center"
+        style="min-width: 220px; background:#2563EB; color:white; height: 100%;">
+        <img src="assets/agritech.png" alt="Agri Tech"
+          class="img-fluid mb-3 rounded shadow" style="max-width:70px; height:auto;" />
+        <strong class="mb-2">Agri Tech</strong>
+        <hr class="domain-divider bg-light w-50" />
+        <p class="description mt-2">Technology improving farming productivity, sustainability, and resource management.</p>
+      </div>
+
+      <!-- Health Tech -->
+      <div class="card shadow rounded-3 p-3 d-flex flex-column align-items-center text-center"
+        style="min-width: 220px; background:#2563EB; color:white; height: 100%;">
+        <img src="assets/health.png" alt="Health Tech"
+          class="img-fluid mb-3 rounded shadow" style="max-width:70px; height:auto;" />
+        <strong class="mb-2">Health Tech</strong>
+        <hr class="domain-divider bg-light w-50" />
+        <p class="description mt-2">Digital innovations revolutionizing healthcare, diagnostics, and patient care.</p>
+      </div>
+
+      <!-- Sustainable Tech -->
+      <div class="card shadow rounded-3 p-3 d-flex flex-column align-items-center text-center"
+        style="min-width: 220px; background:#2563EB; color:white; height: 100%;">
+        <img src="assets/download (1).jfif" alt="Sustainable and Green Technologies"
+          class="img-fluid mb-3 rounded shadow" style="max-width:70px; height:auto;" />
+        <strong class="mb-2">Sustainable & Green Tech</strong>
+        <hr class="domain-divider bg-light w-50" />
+        <p class="description mt-2">Eco-friendly solutions promoting renewable energy and environmental conservation.</p>
+      </div>
+
+      <!-- IoT -->
+      <div class="card shadow rounded-3 p-3 d-flex flex-column align-items-center text-center"
+        style="min-width: 220px; background:#2563EB; color:white; height: 100%;">
+        <img src="assets/download (2).jfif" alt="IoT and Embedded Systems"
+          class="img-fluid mb-3 rounded shadow" style="max-width:70px; height:auto;" />
+        <strong class="mb-2">IoT & Embedded Systems</strong>
+        <hr class="domain-divider bg-light w-50" />
+        <p class="description mt-2">Connected devices enabling smarter environments and seamless automation.</p>
+      </div>
+
+      <!-- Ed Tech -->
+      <div class="card shadow rounded-3 p-3 d-flex flex-column align-items-center text-center"
+        style="min-width: 220px; background:#2563EB; color:white; height: 100%;">
+        <img src="assets/download (3).jfif" alt="Ed Tech and Smart Learning Platform"
+          class="img-fluid mb-3 rounded shadow" style="max-width:70px; height:auto;" />
+        <strong class="mb-2">Ed Tech & Smart Learning</strong>
+        <hr class="domain-divider bg-light w-50" />
+        <p class="description mt-2">Innovative tools transforming education through technology and interactive platforms.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== COMPETITION STRUCTURE ========== -->
+<section class="competition-section">
+  <div class="container">
+    <h2>Competition Structure – Four Rounds</h2>
+    <div class="round">
+      <h4>Round 1: Idea Submission (Online)</h4>
+      <p>Submit startup ideas via Google Form → evaluated on originality, feasibility, team capability, and social impact.</p>
+    </div>
+    <div class="round">
+      <h4>Round 2: Offline Pitching (Day 1)</h4>
+      <p>Selected teams pitch in front of judges at ACPCE → shortlisted on innovation, feasibility & scalability.</p>
+    </div>
+    <div class="round">
+      <h4>Round 3: Panel Review & Mentorship (Day 2 Morning)</h4>
+      <p>Teams interact with domain experts & refine pitch decks, demos & strategies.</p>
+    </div>
+    <div class="round">
+      <h4>Round 4: Final Investor Pitch + Q&A (Day 2 Afternoon)</h4>
+      <p>Finalists pitch to investors, VCs & govt bodies → top 5 student teams recognized.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY-WISE SCHEDULE ========== -->
+<section class="schedule-section">
+  <div class="container">
+    <h2>Day-Wise Schedule</h2>
+    <div class="schedule-grid">
+      <div class="day">
+        <h3>Day 1 – 24th September 2025</h3>
+        <ul>
+          <li><strong>Morning:</strong> Inauguration, Keynote Speaker, Shortlist Announcement</li>
+          <li><strong>Afternoon:</strong> Round 2 Pitching</li>
+          <li><strong>Evening:</strong> Jury evaluation & shortlist for Round 3</li>
+        </ul>
+      </div>
+      <div class="day">
+        <h3>Day 2 – 25th September 2025</h3>
+        <ul>
+          <li><strong>Morning:</strong> Round 3 Panel Review & Mentorship</li>
+          <li><strong>Afternoon:</strong> Round 4 Investor Pitch + Q&A</li>
+          <li><strong>Evening:</strong> Prize Distribution & Closing Ceremony</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SPEAKER LINEUP ========== -->
+<section class="speakers-section">
+  <div class="container">
+    <h2>Speaker Lineup</h2>
+    <div class="speakers-grid">
+      <div class="speaker-card">
+        <img src="assets/speaker1.jpg" alt="Dr. Ravindra Pratap Gupta">
+        <div class="speaker-info">
+          <h4>Dr. Ravindra Pratap Gupta</h4>
+          <p>Associate Professor (Entrepreneurship), BIMTECH | Mentor of Change (NITI Aayog) | Startup Advisor</p>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <img src="assets/speaker2.jpg" alt="Mr. Jayesh Khade">
+        <div class="speaker-info">
+          <h4>Mr. Jayesh Khade</h4>
+          <p>Startup Mentor | Honorary Advisor, WTC Navi Mumbai | Director, SAIDHAM Hospital & Innovinc Global</p>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <img src="assets/speaker3.jpg" alt="Mr. B. R. Venkatesh">
+        <div class="speaker-info">
+          <h4>Mr. B. R. Venkatesh</h4>
+          <p>Tech Entrepreneur | Entrepreneurship Trainer | Guest Faculty, Sophia College</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partners -->
+  <section class="partners d-flex flex-wrap justify-content-center gap-3 py-3 text-center">
+    <img src="assets/acpce.jpg" alt="ACPCE College" class="img-fluid" />
+    <img src="assets/acpce_logo.jpg" alt="ACPCE Innovation Cell" class="img-fluid" />
+    <img src="assets/iic_logo.jpg" alt="IIC" class="img-fluid" />
+    <img src="assets/logo.png" alt="Insignia 2025" class="img-fluid" />
+  </section>
+
+
+<!-- Register Section -->
+ <li></li>
+ <li></li>
+  <section id="register" class="container py-4 text-center">
+    <h2 class="mb-4">Registration Process</h2>
+    <div class="row g-3 justify-content-center">
+      <a href="#" class="col-6 col-md-2 page-card text-center p-3 border rounded text-decoration-none">
+        <h3>01</h3>
+        <p>Team Leader Details</p>
+      </a>
+      <a href="#" class="col-6 col-md-2 page-card text-center p-3 border rounded text-decoration-none">
+        <h3>02</h3>
+        <p>Team Members</p>
+      </a>
+      <a href="#" class="col-6 col-md-2 page-card text-center p-3 border rounded text-decoration-none">
+        <h3>03</h3>
+        <p>Project Description</p>
+      </a>
+      <a href="#" class="col-6 col-md-2 page-card text-center p-3 border rounded text-decoration-none">
+        <h3>04</h3>
+        <p>Submit</p>
+      </a>
+    </div>
+
+    <div class="mt-4">
+      <p><strong>Register using Google Form</strong></p>
+      <a href="https://forms.gle/jo6K1dw2qs8DNBNn8/" class="btn btn-primary btn-lg mb-3" target="_blank">Google Form Registration</a>
+
+      <p><strong>Or Register using Unstop</strong></p>
+      <a href="https://unstop.com/o/kzIlc0p?lb=WW0jas9w" class="btn btn-success btn-lg" target="_blank">Unstop Registration</a>
+    </div>
+  </section>
+
+<!-- Investor Section -->
+ <section id="investor" class="py-5 text-center">
+  <h2 class="mb-4">JOIN US AS INVESTORS-INSIGNIA 2025</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-4">
+    <div class="p-4 shadow rounded text-center d-flex flex-column" 
+         style="flex: 1; min-width: 300px; max-width: 450px; background: #fff;">
+      <h3 class="mb-3">🔹 Free Investor Pass</h3>
+      <p><strong>Access:</strong></p>
+      <ul class="text-start">
+        <li>✅ Access to startup pitch sessions</li>
+        <li>✅ Networking with founders & investors</li>
+      </ul>
+      <!-- Added mt-auto here -->
+      <div class="mt-auto">
+        <a href="https://forms.gle/DE34YocvJ4n9KXcA9" target="_blank" class="btn btn-dark mt-3">Register Now</a>
+      </div>
+    </div>
+
+    <div class="p-4 shadow rounded text-center d-flex flex-column" 
+         style="flex: 1; min-width: 300px; max-width: 450px; background: #fff;">
+      <h3 class="mb-3">💼 Premium Investor Partner (₹5,000)</h3>
+      <p><strong>Exclusive Perks:</strong></p>
+      <ul class="text-start">
+        <li>✔ 1-to-1 sessions with Top 10 startups</li>
+        <li>✔ VIP seating during Investor Round</li>
+        <li>✔ Branding (logo on screens & brochure)</li>
+        <li>✔ Complimentary hospitality & event kit</li>
+      </ul>
+      <!-- Added mt-auto here -->
+      <div class="mt-auto">
+        <a href="https://forms.gle/DE34YocvJ4n9KXcA9" target="_blank" class="btn btn-dark mt-3">Register Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsor Section -->
+  <section id="sponsor" class="container py-4 text-center">
+    <h2 class="mb-3">JOIN US AS SPONSORS - INSIGNIA 2025</h2>
+    <h4 class="mt-4">🎯 Why Sponsor?</h4>
+    <ul class="mb-4 text-start d-inline-block text-start">
+      <li>✅ Boost brand presence among 100+ students & startups</li>
+      <li>✅ Network with investors, mentors & industry leaders</li>
+      <li>✅ Showcase your thought leadership in the startup ecosystem</li>
+      <li>✅ Support India’s innovation & entrepreneurship drive</li>
+    </ul>
+
+    <h4 class="mt-4">💰 Sponsorship Plans:</h4>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th>Tier</th>
+            <th>Benefits</th>
+            <th>Sponsorship Amount (INR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic</strong></td>
+            <td>Instagram mention + Banner display</td>
+            <td>₹25,000</td>
+          </tr>
+          <tr>
+            <td><strong>Silver</strong></td>
+            <td>Instagram (2 posts) + Banner + 1 booth + 2 passes + Meals (all day)</td>
+            <td>₹50,000</td>
+          </tr>
+          <tr>
+            <td><strong>Gold</strong></td>
+            <td>Instagram (all posts) + Banner + Day 1 Speaker + Judge + Booth + 4 passes + Meals (all day) + Certificate mention</td>
+            <td>₹85,000</td>
+          </tr>
+          <tr>
+            <td><strong>Platinum</strong></td>
+            <td>Instagram (all posts) + Banner + Speaker (Day 1 & 2) + Judge Option + 2 Booths + 6 passes + Meals (all day) + Certificate mention</td>
+            <td>₹1,00,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mb-4 text-center">
+      📌 Confirm your sponsorship by filling this form:<br>
+      <a href="https://forms.gle/WYPyg2eUvN9T3T278" target="_blank" class="btn btn-primary mt-2">Sponsor Registration Form</a>
+    </p>
+
+    <div class="text-center mt-4">
+      <p class="mt-4">📎 Event brochure attached for reference.</p>
+      <a href="assets/Insignia_Brochure.pdf" download class="btn btn-outline-primary">📥 Download Brochure</a>
+    </div>
+  </section>
+
+
+  <!-- FAQ Section -->
+ <section id="faq" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 text-center fw-bold text-uppercase" style="color:#2563EB;">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="accordion shadow-lg rounded-3 overflow-hidden" id="faqAccordion">
+
+      <!-- Q1 -->
+      <div class="accordion-item border-0 mb-3 rounded">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Who can participate in the pitching competition?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Engineering and management students (maximum 4 per team), early-stage startups, and innovators can participate.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="accordion-item border-0 mb-3 rounded">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How do I register as a student participant?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can register via our official Google Form link provided above.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="accordion-item border-0 mb-3 rounded">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What are the evaluation criteria for pitching rounds?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Ideas will be evaluated on originality, feasibility, scalability, team strength, and social impact.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="accordion-item border-0 mb-3 rounded">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Will participants receive certificates?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, certificates will be provided to all participants, speakers, sponsors, and investors.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="accordion-item border-0 mb-3 rounded">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Can startups showcase their products?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, selected startups will receive booth space to showcase their products at the expo.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="accordion-item border-0 mb-3 rounded">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Are meals included?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Meals are included in sponsor and investor passes. Student passes do not include meals.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="accordion-item border-0 mb-3 rounded">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Can an individual register without a team?
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, students can register individually as observers. For competitions, team participation is encouraged.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Venue Section -->
+  <section id="venue" class="py-4">
+  <div class="container d-flex flex-wrap justify-content-center align-items-center gap-3 text-center" style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+    
+    <!-- Left Content -->
+    <div style="flex: 1; min-width: 300px;">
+      <h2>Venue</h2>
+      <p>Our location and how you can get here</p>
+      <img src="assets/venue1.png" alt="A. C. Patil College of Engineering" class="img-fluid rounded mb-3" style="max-width: 200px;">
+      <h3>Address</h3>
+      <p>
+        <b>A. C. Patil College of Engineering</b><br>
+        23J6+6JC, Sector 4, Kharghar, Navi Mumbai,<br>
+        Maharashtra - 410210, India
+      </p>
+      <a href="https://www.google.com/maps/dir//A+C+Patil+College+of+Engineering/@19.0330,73.0490,15z" target="_blank" class="btn" style="background: #D2C1B6; color: #fff;">GET DIRECTIONS</a>
+    </div>
+
+    <!-- Map with pinpoint -->
+    <div style="flex: 1; min-width: 300px;">
+      <iframe 
+        src="https://www.google.com/maps?q=A.+C.+Patil+College+of+Engineering,+Sector+4,+Kharghar,+Navi+Mumbai,+Maharashtra&output=embed" 
+        width="100%" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-4 text-center">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:insignia.acpce@gmail.com">insignia@college.edu</a></p>
+    <ul class="list-unstyled">
+      <li><strong>Abhishek Kumar Lal</strong> — <a href="tel:+918691066937">+91 86910 66937</a></li>
+      <li><strong>Advait Kanekar</strong> — <a href="tel:+917718096899">+91 77180 96899</a></li>
+      <li><strong>Yashashree Dhake</strong> — <a href="tel:+919136349006">+91 91363 49006</a></li>
+    </ul>
+    <div class="social-links d-flex justify-content-center gap-3">
+      <a href="https://www.instagram.com/insignia_acpce?igsh=cWhvNjVwdmlrcmw0" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-2 text-center">
+    <div class="container scrolling-text">
+      ACPCE | ACPCE Innovation Cell | IIC | Insignia 2025
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
